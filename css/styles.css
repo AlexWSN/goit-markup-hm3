@@ -1,3 +1,9 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0 auto;
+}
 .webstudio {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -9,9 +15,9 @@
   position: absolute;
   width: 145px;
   height: 31px;
-  left: 215px;
+  left: 50px;
   top: 24px;
-  letter-spacing: 0.03em;
+  letter-spacing: 0em;
 }
 ul {
   list-style: none;
@@ -121,7 +127,7 @@ main {
   position: absolute;
   width: 135px;
   height: 16px;
-  left: 1097px;
+  left: 900px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -136,7 +142,7 @@ main {
   position: absolute;
   width: 113px;
   height: 16px;
-  left: 1232px;
+  left: 1050px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -200,17 +206,65 @@ ul {
 .contact-list li a:hover {
   color: rgba(33, 150, 243, 1);
 }
+
+/*section1*/
+#mySection .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: transparent;
+}
+#mySection {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*section2*/
+#myImages.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+#whatWeDo .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#myImages {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myDesigners.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .feature-list {
   display: flex;
   flex-direction: row;
+  width: 1200px;
 }
 
 .feature-list li {
   flex: 1;
 }
+.feature-list li p {
+  margin-bottom: 10px;
+}
 .images-list {
   display: flex;
   flex-direction: row;
+  margin: 0;
 }
 
 .images-list li {
@@ -222,11 +276,19 @@ ul {
 
 .images-list h2 {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  top: 140%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  margin-top: -50px;
+  margin: 50px 0 0;
+  padding: 0;
+}
+
+#myImages h2,
+#myDesigners h2 {
+  display: flex;
+  justify-content: center;
+  margin-top: -500px;
 }
 
 .images-list li {
@@ -234,24 +296,27 @@ ul {
   margin: 10px;
 }
 .designers-list {
-  display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .designers-list li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px;
+  flex: 0 0 200px;
   text-align: center;
+  margin: 20px;
 }
+
 .designers-list h2 {
   position: absolute;
+  top: 200%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  width: 90%;
-  top: 1080px;
+  margin: 50px 0 0;
+  padding: 0;
 }
 .designers-list img {
   width: 200px;
@@ -260,6 +325,14 @@ ul {
 .designers-list h4,
 .designers-list p {
   margin-top: 10px;
+}
+
+#mySection {
+  margin-bottom: 100px;
+}
+
+#myImages {
+  margin-bottom: 100px;
 }
 
 .filter-buttons button {
@@ -296,8 +369,9 @@ ul {
   align-items: center;
   flex-direction: column;
   position: absolute;
-  width: 1600px;
+  width: 1400px;
   height: 300px;
+  margin: 0;
   left: 0px;
   top: px;
   background-color: #2f303a;
@@ -367,6 +441,7 @@ section button {
 
 footer {
   position: relative;
+  width: 100%;
 }
 
 .web-footer {
@@ -381,9 +456,10 @@ footer {
 }
 
 section.box-bottom {
-  position: absolute;
-  width: 1600px;
-  height: 251px;
+  display: flex;
+  width: 1400px;
+  height: 300px;
+  margin: 0;
   left: 0px;
   top: 20px;
   background-color: #2f303a;
@@ -397,11 +473,21 @@ section.box-bottom {
   text-decoration: none;
   color: #ffffff;
 }
-.box-bottom {
-  display: flex;
-  justify-content: flex-start;
+address {
+  text-align: left;
 }
 
 .box-bottom {
-  text-align: left;
+  display: flex;
+  justify-content: left;
+}
+
+footer .contact-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+footer .contact-list li {
+  margin-bottom: 10px;
 }
